@@ -5,7 +5,13 @@ Light yellow:  rgb(205, 213, 111)
 Medium yellow:  rgb(230, 230, 36)
 Dark yellow: rgb(234, 234, 90)
 
+rgba(111, 119, 213, 0.8),
+        rgba(88, 36, 230, 0.9))
 */
+
+/* some rules that can help to keep css clean and as a library for reuse stuff : */
+/* css appears as the appear in the page */
+
 
 *{
     margin: 0;
@@ -33,6 +39,7 @@ body {
     
     clip-path: polygon( 0 0, 100% 0, 100% 500px, 0 100%);
     position: relative;
+    /* here some polygons ex.: https://bennettfeely.com/clippy/*/
 }
 
 .logo-box {
@@ -44,7 +51,11 @@ body {
 .logo {
     height: 100px;
 }
+.logo:hover {
+    animation: moveInRight 1s ease-out;
+}
 
+/* how to center in css: keywrds: top, left, tranform */
 .text-box {
     position: absolute;
     top: 40%;
@@ -55,6 +66,7 @@ body {
 .heading-primary { 
     color: #fff;
     text-transform: uppercase;
+    backface-visibility: hidden;/*to prevent animation from shaking*/
 }
 
 .heading-primary-main {
@@ -62,6 +74,13 @@ body {
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 35px;
+    /* under reference to @keyframes */
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    /*animation-delay: 1s;
+    animation-iteration-count: 1;*/
+    animation-timing-function: ease-out;
+    
 }
 
 .heading-primary-sub {
@@ -69,4 +88,44 @@ body {
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 17.4px;
+    /* under reference to @keyframes */
+    animation: moveInRight 1s ease-out;
+    /*animation-delay: 1s;
+    animation-iteration-count: 1;*/
+}
+
+/* animation in css: we're using here @keyframes */
+@keyframes moveInLeft {
+    /* what happen when the animation is at: */
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    
+    80% {
+        transform: translateX(10px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* animation in css: we're using here @keyframes */
+@keyframes moveInRight {
+    /* what happen when the animation is at: */
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    
+    80% {
+        transform: translateX(-10px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
