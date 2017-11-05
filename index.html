@@ -14,19 +14,20 @@
     </head>
     <body>
         <header class="header">
-            <div class="logo-box">
-                <img src="#" alt="logo" class="logo">
+            <!--<div class="logo-box"> part of .header block but it's a element(no stand alone meaning) ad so on for the others...-->
+               <div class="header__logo-box">
+                <img src="#" alt="logo" class="header__logo">
             </div>
-            <div class="text-box">
-                <h1 class="heading-primary">
-                <span class="heading-primary-main">outdoorGym</span>
-                <span class="heading-primary-sub">train without restriction</span>
+            <div class="header__text-box">
+                <h1 class="heading-primary"><!-- a block of it's own: a stand alone block -->
+                <span class="heading-primary--main">outdoorGym</span>
+                <span class="heading-primary--sub">train without restriction</span>
             </h1><!-- end .heading-primary-->
             
-            <a href="#" class="btn btn-white btn-animated">Discover playgrounds</a>
+            <a href="#" class="btn btn--white btn--animated">Discover playgrounds</a>
             </div>
             
-        </header><!-- end header -->
+        </header><!-- end header(a block component)-->
 
 
 
