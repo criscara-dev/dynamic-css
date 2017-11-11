@@ -1,0 +1,27 @@
+{
+  "name": "fit",
+  "version": "1.0.0",
+  "description": "a fit university website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/criscarart/dynamic-css.git"
+  },
+  "keywords": [
+    "fit",
+    "university",
+    "css"
+  ],
+  "author": "Cristian Caratti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/criscarart/dynamic-css/issues"
+  },
+  "homepage": "https://github.com/criscarart/dynamic-css#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
+}
