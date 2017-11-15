@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; /*so all the elements are gonna inherit from *body*/
+}
+
+html {
+    /*font-size: 10px; */   /*this is the root: we give a value of 10px so we have 1rem */
+    /*but better practice use % at this point for avoid porblems later...so 10px /16(default)=0.625 so... */
+    font-size: 62.5%; // this define what 1rem is
+}
+
+body {
+    box-sizing: border-box;
+}

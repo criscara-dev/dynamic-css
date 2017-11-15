@@ -1,0 +1,48 @@
+/* animation in css: we're using here @keyframes */
+@keyframes moveInLeft {
+    /* what happen when the animation is at: */
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    
+    80% {
+        transform: translateX(1rem);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* animation in css: we're using here @keyframes */
+@keyframes moveInRight {
+    /* what happen when the animation is at: */
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    
+    80% {
+        transform: translateX(-1rem);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInBottom {
+    /* what happen when the animation is at: */
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+        
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
