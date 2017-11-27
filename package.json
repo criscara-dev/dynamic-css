@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/criscarart/dynamic-css#readme",
   "devDependencies": {
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.7.1"
   }
 }
